@@ -11,6 +11,9 @@
 		C356B3932822EE9F00CCC683 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C356B3922822EE9F00CCC683 /* ContentView.swift */; };
 		C356B3952822EEA100CCC683 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C356B3942822EEA100CCC683 /* Assets.xcassets */; };
 		C356B3982822EEA100CCC683 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C356B3972822EEA100CCC683 /* Preview Assets.xcassets */; };
+		C356B39F2822FE4D00CCC683 /* MyStuff.swift in Sources */ = {isa = PBXBuildFile; fileRef = C356B39E2822FE4D00CCC683 /* MyStuff.swift */; };
+		C356B3A12822FE6400CCC683 /* MyWatchlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = C356B3A02822FE6400CCC683 /* MyWatchlist.swift */; };
+		C356B3A32822FE6D00CCC683 /* AddShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C356B3A22822FE6D00CCC683 /* AddShow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		C356B3922822EE9F00CCC683 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C356B3942822EEA100CCC683 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C356B3972822EEA100CCC683 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C356B39E2822FE4D00CCC683 /* MyStuff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStuff.swift; sourceTree = "<group>"; };
+		C356B3A02822FE6400CCC683 /* MyWatchlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWatchlist.swift; sourceTree = "<group>"; };
+		C356B3A22822FE6D00CCC683 /* AddShow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddShow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +59,9 @@
 			children = (
 				C356B3902822EE9F00CCC683 /* tvTime2App.swift */,
 				C356B3922822EE9F00CCC683 /* ContentView.swift */,
+				C356B39E2822FE4D00CCC683 /* MyStuff.swift */,
+				C356B3A02822FE6400CCC683 /* MyWatchlist.swift */,
+				C356B3A22822FE6D00CCC683 /* AddShow.swift */,
 				C356B3942822EEA100CCC683 /* Assets.xcassets */,
 				C356B3962822EEA100CCC683 /* Preview Content */,
 			);
@@ -138,6 +147,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C356B3932822EE9F00CCC683 /* ContentView.swift in Sources */,
+				C356B3A12822FE6400CCC683 /* MyWatchlist.swift in Sources */,
+				C356B39F2822FE4D00CCC683 /* MyStuff.swift in Sources */,
+				C356B3A32822FE6D00CCC683 /* AddShow.swift in Sources */,
 				C356B3912822EE9F00CCC683 /* tvTime2App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

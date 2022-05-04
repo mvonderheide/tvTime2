@@ -8,9 +8,18 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            NavigationLink {
+                MyStuff()
+            } label: {
+                Image("tvTime")
+                    .resizable()
+                    .frame(width: 600)
+            }
+            
+        }
     }
 }
 
