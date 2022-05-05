@@ -9,34 +9,34 @@ import SwiftUI
 
 enum StreamingService: String {
     case netflix, amazon, hulu, disneyPlus, paramountPlus, peacock, showtime, appleTV
-//    case amazon
-//    case hulu
-//    case disneyPlus
-//    case paramountPlus
-//    case peacock
-//    case showtime
-//    case appleTV
+    //    case amazon
+    //    case hulu
+    //    case disneyPlus
+    //    case paramountPlus
+    //    case peacock
+    //    case showtime
+    //    case appleTV
 }
 
 enum Format: String {
     case series, movie, documentary
-//    case movie
-//    case documentary
+    //    case movie
+    //    case documentary
 }
 
 enum Genre: String {
     case horror, drama, action, western, comedy, sciFi, thriller, fantasy, adventure, animation, war, mystery
-//    case drama
-//    case action
-//    case western
-//    case comedy
-//    case sciFi
-//    case thriller
-//    case fantasy
-//    case adventure
-//    case animation
-//    case war
-//    case mystery
+    //    case drama
+    //    case action
+    //    case western
+    //    case comedy
+    //    case sciFi
+    //    case thriller
+    //    case fantasy
+    //    case adventure
+    //    case animation
+    //    case war
+    //    case mystery
 }
 
 struct Show: Identifiable {
@@ -50,12 +50,15 @@ struct Show: Identifiable {
 }
 
 struct MyWatchlist: View {
+    
     @State var shows = [Show(title: "", service: .netflix, format: .movie, genre: .mystery, description: "")]
+    
     var body: some View {
         List {
             ForEach($shows) { $show in
                 NavigationLink(
                     destination: AddShow(show: $show),
+                    //line 58 - removed (show: $show) to fix error.  will need to add back to pass data
                     label: {
                         ShowRowView(show: show)
                     })
@@ -67,13 +70,21 @@ struct MyWatchlist: View {
             }
             .onMove(perform: { rows, newIndex in
                 shows.move(fromOffsets: rows, toOffset: newIndex)
-              })
-        }
+            })
+        }.navigationTitle("My Watchlist")
+            .navigationBarItems(leading: EditButton(),
+                                trailing: Button(action: {
+                shows.append (Show(title: "title", service: StreamingService.netflix,  format: Format.series, genre: Genre.drama, description: "description"))
+                //category: QuoteCategory.physics)) - How do I change this to defaul to just quote category?
+            }) {
+                Image(systemName: "plus").imageScale(.large)
+            }
+            )
     }
 }
 
-struct MyWatchlist_Previews: PreviewProvider {
-    static var previews: some View {
-        MyWatchlist()
-    }
-}
+//struct MyWatchlist_Previews: PreviewProvider {
+//    static var previews: some View {
+//        MyWatchlist()
+//    }
+//}

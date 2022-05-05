@@ -9,6 +9,7 @@ import SwiftUI
 
 
 struct MyStuff: View {
+//    var show: Show
     var body: some View {
         VStack{
             NavigationLink(
@@ -30,8 +31,27 @@ struct MyStuff: View {
                     }
                 })
             
+//            NavigationLink(
+//                destination: AddShow(),
+//                label: {
+//                    ZStack{
+//                        RoundedRectangle(cornerRadius: 15)
+//                            .frame(height: 100)
+//                            .foregroundColor(.white)
+//                            .shadow(radius: 5)
+//                            .padding()
+//                        HStack{
+//                            Image(systemName: "plus")
+//                                .resizable()
+//                                .frame(width: 50, height: 50)
+//                            Text("Add a Show")
+//                                .font(.title2)
+//                        }
+//                    }
+//                })
+            
             NavigationLink(
-                destination: MyWatchlist(),
+                destination: WhatToWatch(),
                 label: {
                     ZStack{
                         RoundedRectangle(cornerRadius: 15)
@@ -40,43 +60,23 @@ struct MyStuff: View {
                             .shadow(radius: 5)
                             .padding()
                         HStack{
-                            Image(systemName: "plus")
+                            Image(systemName: "tv.circle.fill")
                                 .resizable()
                                 .frame(width: 50, height: 50)
-                            Text("Add a Show")
+                            Text("What to watch")
                                 .font(.title2)
                         }
                     }
                 })
-            
-            
-            NavigationLink(
-                destination: MyWatchlist(),
-                label: {
-                    ZStack{
-                        RoundedRectangle(cornerRadius: 15)
-                            .frame(height: 100)
-                            .foregroundColor(.white)
-                            .shadow(radius: 5)
-                            .padding()
-                        HStack{
-                            Image(systemName: "film.fill")
-                                .resizable()
-                                .frame(width: 50, height: 50)
-                            Text("My Watchlist")
-                                .font(.title2)
-                        }
-                    }
-                })
-          .navigationTitle("My Stuff")
+                .navigationTitle("My Stuff")
             Spacer()
         }
     }
 }
 
-struct MyStuff_Previews: PreviewProvider {
-    static var previews: some View {
-        MyStuff()
-    }
-}
+//struct MyStuff_Previews: PreviewProvider {
+//    static var previews: some View {
+//        MyStuff()
+//    }
+//}
 

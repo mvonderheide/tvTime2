@@ -15,6 +15,7 @@
 		C356B3A12822FE6400CCC683 /* MyWatchlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = C356B3A02822FE6400CCC683 /* MyWatchlist.swift */; };
 		C356B3A32822FE6D00CCC683 /* AddShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C356B3A22822FE6D00CCC683 /* AddShow.swift */; };
 		C356B3A728241BD500CCC683 /* ShowRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C356B3A628241BD500CCC683 /* ShowRowView.swift */; };
+		C356B3A92824226100CCC683 /* WhatToWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = C356B3A82824226100CCC683 /* WhatToWatch.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		C356B3A02822FE6400CCC683 /* MyWatchlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWatchlist.swift; sourceTree = "<group>"; };
 		C356B3A22822FE6D00CCC683 /* AddShow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddShow.swift; sourceTree = "<group>"; };
 		C356B3A628241BD500CCC683 /* ShowRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowRowView.swift; sourceTree = "<group>"; };
+		C356B3A82824226100CCC683 /* WhatToWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatToWatch.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				C356B3922822EE9F00CCC683 /* ContentView.swift */,
 				C356B3A628241BD500CCC683 /* ShowRowView.swift */,
 				C356B39E2822FE4D00CCC683 /* MyStuff.swift */,
+				C356B3A82824226100CCC683 /* WhatToWatch.swift */,
 				C356B3A02822FE6400CCC683 /* MyWatchlist.swift */,
 				C356B3A22822FE6D00CCC683 /* AddShow.swift */,
 				C356B3942822EEA100CCC683 /* Assets.xcassets */,
@@ -149,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C356B3A92824226100CCC683 /* WhatToWatch.swift in Sources */,
 				C356B3A728241BD500CCC683 /* ShowRowView.swift in Sources */,
 				C356B3932822EE9F00CCC683 /* ContentView.swift in Sources */,
 				C356B3A12822FE6400CCC683 /* MyWatchlist.swift in Sources */,

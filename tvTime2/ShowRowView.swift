@@ -8,9 +8,30 @@
 import SwiftUI
 
 struct ShowRowView: View {
+    
     var show: Show
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack (alignment: .leading) {
+            Text(show.title)
+                .font(.title2)
+            HStack {
+                Text("Service: ")
+                Text(show.service.rawValue)
+            }
+            HStack {
+                Text("Format: ")
+                Text(show.format.rawValue)
+            }
+            HStack {
+                Text("Genre: ")
+                Text(show.genre.rawValue)
+            }
+            HStack {
+                Text("Description: ")
+                Text(show.description)
+            }
+        }
     }
 }
 
