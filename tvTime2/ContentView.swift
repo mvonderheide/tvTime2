@@ -15,6 +15,7 @@ struct ContentView: View {
                 MyStuff()
             } label: {
                 Text("Hi")
+                Text("Hi Again")
                 Image("tvTime")
                     .resizable()
                     .frame(width: 600)
