@@ -14,11 +14,11 @@ struct ContentView: View {
             NavigationLink {
                 MyStuff()
             } label: {
+                Text("Hi")
                 Image("tvTime")
                     .resizable()
                     .frame(width: 600)
             }
-            
         }
     }
 }
