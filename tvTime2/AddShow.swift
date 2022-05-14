@@ -11,6 +11,8 @@ struct AddShow: View {
     
     @Binding var show: Show
     
+    //kevin test
+    
     var body: some View {
         VStack (alignment: .leading){
             HStack{
