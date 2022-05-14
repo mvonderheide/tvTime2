@@ -9,7 +9,7 @@ import SwiftUI
 
 
 struct MyStuff: View {
-//    var show: Show
+    //    var show: Show
     var body: some View {
         VStack{
             NavigationLink(
@@ -31,24 +31,24 @@ struct MyStuff: View {
                     }
                 })
             
-//            NavigationLink(
-//                destination: AddShow(),
-//                label: {
-//                    ZStack{
-//                        RoundedRectangle(cornerRadius: 15)
-//                            .frame(height: 100)
-//                            .foregroundColor(.white)
-//                            .shadow(radius: 5)
-//                            .padding()
-//                        HStack{
-//                            Image(systemName: "plus")
-//                                .resizable()
-//                                .frame(width: 50, height: 50)
-//                            Text("Add a Show")
-//                                .font(.title2)
-//                        }
-//                    }
-//                })
+            //            NavigationLink(
+            //                destination: AddShow(),
+            //                label: {
+            //                    ZStack{
+            //                        RoundedRectangle(cornerRadius: 15)
+            //                            .frame(height: 100)
+            //                            .foregroundColor(.white)
+            //                            .shadow(radius: 5)
+            //                            .padding()
+            //                        HStack{
+            //                            Image(systemName: "plus")
+            //                                .resizable()
+            //                                .frame(width: 50, height: 50)
+            //                            Text("Add a Show")
+            //                                .font(.title2)
+            //                        }
+            //                    }
+            //                })
             
             NavigationLink(
                 destination: WhatToWatch(),

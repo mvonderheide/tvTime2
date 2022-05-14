@@ -55,7 +55,7 @@ struct AddShow: View {
                 Text("Animation").tag(Genre.animation)
                 Text("War").tag(Genre.war)
                 
-               
+                
             })
             Spacer()
         }.padding()
