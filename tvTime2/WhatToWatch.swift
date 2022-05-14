@@ -12,7 +12,7 @@ struct WhatToWatch: View {
     @State var showPicked: Show?
     
     var body: some View {
-//        Text("Show?")
+        Text("Show?")
             .onAppear {
                 showPicked = shows.randomElement()
             }
