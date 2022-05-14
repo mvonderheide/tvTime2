@@ -8,13 +8,19 @@
 import SwiftUI
 
 struct WhatToWatch: View {
+    @Binding var shows: [Show]
+    @State var showPicked: Show?
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+//        Text("Show?")
+            .onAppear {
+                showPicked = shows.randomElement()
+            }
     }
 }
 
-struct WhatToWatch_Previews: PreviewProvider {
-    static var previews: some View {
-        WhatToWatch()
-    }
-}
+//struct WhatToWatch_Previews: PreviewProvider {
+//    static var previews: some View {
+//        WhatToWatch(shows: <#Binding<[Show]>#>)
+//    }
+//}

@@ -9,10 +9,12 @@ import SwiftUI
 
 struct ContentView: View {
     
+    @State var shows = [Show(title: "", service: .netflix, format: .movie, genre: .mystery, description: "")]
+    
     var body: some View {
         NavigationView {
             NavigationLink {
-                MyStuff()
+                MyStuff(shows: $shows)
             } label: {
                 Text("Hi")
                 Text("Hi Again")

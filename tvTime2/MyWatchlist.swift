@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+
 enum StreamingService: String {
     case netflix, amazon, hulu, disneyPlus, paramountPlus, peacock, showtime, appleTV
     //    case amazon
@@ -51,7 +52,7 @@ struct Show: Identifiable {
 
 struct MyWatchlist: View {
     
-    @State var shows = [Show(title: "", service: .netflix, format: .movie, genre: .mystery, description: "")]
+    @Binding var shows: [Show]
     
     var body: some View {
         List {
@@ -65,7 +66,6 @@ struct MyWatchlist: View {
                 
             }.onDelete { indexSet in
                 shows.remove(atOffsets: indexSet)
-                
                 
             }
             .onMove(perform: { rows, newIndex in
