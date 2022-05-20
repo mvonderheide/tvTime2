@@ -11,11 +11,21 @@ struct WhatToWatch: View {
     @Binding var shows: [Show]
     @State var showPicked: Show?
     
+    
     var body: some View {
-        Text("Show?")
-            .onAppear {
-                showPicked = shows.randomElement()
+        VStack {
+            if showPicked != nil {
+                ZStack{
+                    Image("crystalBall")
+                        .resizable()
+                        .frame(width: 500, height: 500)
+                    Text("You should watch \(showPicked!.title)!")
+                        .font(.headline)
+                }
             }
+        } .onAppear {
+            showPicked = shows.randomElement()
+        }
     }
 }
 
@@ -24,3 +34,4 @@ struct WhatToWatch: View {
 //        WhatToWatch(shows: <#Binding<[Show]>#>)
 //    }
 //}
+
